@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService{
     public User saveUser(User user) {
        return userRepo.save(user);
     }
-
+     //This is to get user by id  service method
     @Override
     public Optional<User> getById(Long id) {
         Optional<User> user= userRepo.findById(id);
